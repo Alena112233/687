@@ -1,0 +1,45 @@
+static void Main()
+        {
+            Console.Write("Введите имя: ");
+            string name = Console.ReadLine();
+ 
+            Console.WriteLine("Введите возраст: ");
+            int age = int.Parse(Console.ReadLine());
+ 
+            if (age < 1)
+                Console.WriteLine("младенец", age);
+            else
+            {
+                if (age >= 1 || 11 < age)
+                    Console.WriteLine("ребенок", age);
+                else
+                {
+                    if (age >= 12 || 15 < age)
+                        Console.WriteLine("подросток", age);
+                    else
+                    {
+                        if (age >= 16 || 25 < age)
+                            Console.WriteLine("юноша", age);
+                        else
+                        {
+                            if (age >= 26 || 70 < age)
+                                Console.WriteLine("мужчина", age);
+                            else
+                            {
+                                if (age >= 70 || 99 < age)
+                                    Console.WriteLine("старик", age);
+                                else
+                                {
+                                    if (age >= 100)
+                                        Console.WriteLine("долгожитель", age);
+                                }
+                                Console.WriteLine("{0)-{1). Ему {3} лет");
+                                Console.ReadKey();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
